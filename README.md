@@ -3,7 +3,7 @@
 ## Table des matières
 
 * [Propriétés du parent (la flexbox en elle-même)](#parent)
-* [Propriétés des enfants / items](#chiildren)
+* [Propriétés des enfants / items](#children)
 
 [ANCRE_PARENT_PROPS]: g
 ## <a name="parent"></a>Les propriétés de la balise parent
@@ -119,15 +119,15 @@ Remarque: cette propriété n'a aucun effet lorsqu'il n'y a qu'une seule ligne d
 
 Ces propriétés s'appliquent sur les items d'un container flex.
 
-* order
-* flex-grow
-* flex-shrink
-* flex-basis
-* flex
-* align-self
+* [order](#order)
+* [flex-grow](#flex-grow)
+* [flex-shrink](#flex-shrink)
+* [flex-basis](#flex-basis)
+* [flex](#flex)
+* [align-self](#align-self)
 
 
-### order
+### <a name="order"></a>order
 
 ![image order](./img/order.svg)
 
@@ -139,7 +139,7 @@ Par défaut, les éléments flexibles sont disposés dans l'ordre de la source (
 }
 ```
 
-### flex-grow
+### <a name="flex-grow"></a>flex-grow
 
 ![image order](./img/flex-grow.svg)
 
@@ -155,7 +155,7 @@ Si flex-grow est défini sur 1 pour tous les éléments, l'espace restant dans l
 
 > Nombres négatifs invalides
 
-### flex-shrink
+### <a name="flex-shrink"></a>flex-shrink
 
 Cela définit la possibilité pour un élément flexible de se réduire si nécessaire.
 
@@ -167,7 +167,7 @@ Cela définit la possibilité pour un élément flexible de se réduire si néce
 
 > Inverse de flex-grow
 
-### flex-basis
+### <a name="flex-basis"></a>flex-basis
 
 ![image order](./img/rel-vs-abs-flex.svg)
 
@@ -182,7 +182,7 @@ Ceci définit la taille par défaut d'un élément avant que l'espace restant ne
 S'il est défini sur 0, l'espace supplémentaire autour du contenu n'est pas pris en compte. S'il est défini sur auto, l'espace supplémentaire est distribué en fonction de sa valeur flex-grow. Voir ce graphique.
 
 
-### flex
+### <a name="flex"></a>flex
 
 C'est le raccourci pour `flex-grow`, `flex-shrink` et `flex-basis` combinés. Les deuxième et troisième paramètres (`flex-shrink` et `flex-basis`) sont facultatifs. La valeur par défaut est 0 `1 auto`, mais si vous la définissez avec une valeur numérique unique, c'est comme `1 0`.
 
@@ -194,7 +194,7 @@ C'est le raccourci pour `flex-grow`, `flex-shrink` et `flex-basis` combinés. Le
 
 **Il est recommandé d'utiliser cette propriété abrégée plutôt que de définir les propriétés individuelles. La sténographie définit les autres valeurs de manière intelligente.**
 
-### align-self
+### <a name="align-self"></a>align-self
 
 Cela permet de remplacer l'alignement par défaut (ou celui spécifié par align-items) pour les éléments flex individuels.
 
