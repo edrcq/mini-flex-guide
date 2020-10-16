@@ -149,7 +149,7 @@ Si flex-grow est défini sur 1 pour tous les éléments, l'espace restant dans l
 
 ```css
 .item {
-  flex-grow: 4; /* défault: 0 */
+  flex-grow: 4; /* défaut: 0 */
 }
 ```
 
@@ -161,7 +161,7 @@ Cela définit la possibilité pour un élément flexible de se réduire si néce
 
 ```css
 .item {
-  flex-shrink: 3; /* défault: 1 | 0 = ne peut pas se rétrécir */
+  flex-shrink: 3; /* défaut: 1 | 0 = ne peut pas se rétrécir */
 }
 ```
 
